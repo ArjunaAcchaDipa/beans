@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand navbar-dark" style="background-color: #A67B5B" aria-label="Second navbar example">
+<nav class="navbar navbar-expand navbar-dark" style="background-color: #A67B5B">
     <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
