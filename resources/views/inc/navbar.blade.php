@@ -1,19 +1,28 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-expand navbar-dark" style="background-color: #A67B5B" aria-label="Second navbar example">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">{{config("app.name", "Beans")}}</a>
-        </div>
-        {{-- <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="/" style="color:white">Home</a></li>       
-                <li><a href="/login" style="color:white">Login</a></li>
+      <a class="navbar-brand" href="/">{{config("app.name", "Beans")}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: 15px; color: white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: 15px; color: white" href="/about">About</a>
+                </li>
             </ul>
-        </div><!--/.nav-collapse --> --}}
+            <form class="d-flex">
+                <input class="form-control me-2" style="font-size: 15px" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Search</button>
+            </form>
+        </div>
+        <div style="float: right">
+            <form class="d-flex">
+                <button href="/login" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Login</button>
+            </form>
+        </div>
     </div>
 </nav>
