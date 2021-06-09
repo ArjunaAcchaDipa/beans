@@ -53,12 +53,6 @@
 </style>
 
 @section('content')
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div id="blog" class="beans_bg layout_padding right_white">
         <div class="container">
             <div class="row">
@@ -133,4 +127,32 @@
         </div>
     </div>
     
+    <section class="slider_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="full">
+                        <h1>
+                            <strong class="white_font">
+                                Java Travel
+                            </strong>
+                            <br>
+                            20 Cafe Tempat Nongkrong di Jakarta yang Paling Hits
+                        </h1>
+                        <p>
+                            Setelah lelah seharian bekerja, biasanya pada malam hari dapat diisi kegiatan dengan nongkrong di cafe. Tidak hanya sekedar nongkrong saja, dengan bertemu banyak orang di cafe juga dapat menghasilkan sesuatu yang bernilai positif.
+                        </p>
+                        <div class="full margin_top_30">
+                            <a class="main_bt" href="https://www.javatravel.net/cafe-jakarta">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="full margin_top_30">
+                        <img class="img-responsive layout_padding" src="images/java_travel.jpg" alt="#" /> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
