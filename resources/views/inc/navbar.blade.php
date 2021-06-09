@@ -5,7 +5,7 @@ rel="stylesheet"
 integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
 crossorigin="anonymous"
 />
-<nav class="navbar navbar-expand navbar-dark" style="background-color: #A67B5B">
+<nav class="navbar navbar-expand navbar-dark" style="background-color: #A67B5B; position: absolute; width: 100%; padding-top: 10px">
     <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

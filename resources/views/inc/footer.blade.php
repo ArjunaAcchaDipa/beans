@@ -38,8 +38,8 @@
                         <img src="images/fb_logo.png" width="38" height="38">
                     </span>
                     <span>
-                        <a href="https://instagram.com/beans_coffeemap">
-                            <img src="images/ig_logo.png" width="50" height="50">
+                        <a href="https://instagram.com/beans_coffeemap" style="margin-left: 10px">
+                            <img src="images/ig_logo.png" width="46" height="46">
                         </a>
                     </span>
                     <span>
