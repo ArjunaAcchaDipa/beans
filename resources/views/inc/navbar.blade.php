@@ -4,7 +4,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbar">
+        <div class="collapse navbar-collapse" id="navbar" style="padding-left: 5%">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <a class="nav-link" style="font-size: 15px; color: white" aria-current="page" href="{{ url('/')}}">Home</a>
@@ -22,24 +22,24 @@
             </a>
         </div>
         
-        <div style="float: right; padding-right: 20px">
+        <div style="float: left; padding-left: 4%">
             <ul class="navbar-nav">
                 @if (Auth::guest())
                     @include('auth.login')
                     @include('auth.register')
                 @else   
-                <li>
-                    <a class="nav-link active" href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();"
-                    aria-current="page" style="font-size: 25px">
-                        Logout
-                    </a>
+                    <li>
+                        <a class="nav-link active" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();"
+                        aria-current="page" style="font-size: 25px">
+                            Logout
+                        </a>
 
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        {{ csrf_field() }}
-                    </form>
-                </li>      
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </li>      
                 @endif
             </ul>
         </div>

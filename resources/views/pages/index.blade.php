@@ -136,11 +136,14 @@
                     </div>
                 </div>
             </div>
+            <br>
         </div>
     </div>
     {{-- End of Our Recommendation --}}
 
     <div class="container heading" style="heading; padding-top: 20px">
+        <br>
+        <br>
         <strong>
             <h2 class="full">Article</h2>
         </strong>
