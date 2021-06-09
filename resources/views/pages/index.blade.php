@@ -50,10 +50,22 @@
         width: 350px;
         height: 234px;
     }
+    .our_recommendation_highlight {
+        background: #282e40;
+        margin-top: -1px;
+        position: relative;
+        width: 350px;
+        height: 104px;
+    }
+    button.readmore_bt {
+        background: #282e40;
+        color: #111;
+    }
 </style>
 
 @section('content')
-    <div id="blog" class="beans_bg layout_padding right_white">
+    {{-- Our Recommendation --}}
+    <div id="blog" class="beans_bg layout_padding right_white" style="padding-left: 200px">
         <div class="container">
             <div class="row">
             <div class="col-md-12">
@@ -126,33 +138,105 @@
             </div>
         </div>
     </div>
-    
-    <section class="slider_section">
+    {{-- End of Our Recommendation --}}
+
+    <div class="container heading" style="heading; padding-top: 20px">
+        <strong>
+            <h2 class="full">Article</h2>
+        </strong>
+    </div>
+
+    {{-- Article 1 --}}
+    <div id="article1" class="layout_padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="full">
-                        <h1>
-                            <strong class="white_font">
-                                Java Travel
+                        <div class="heading margin_top_30" style="padding-top: 10px">
+                            <strong>
+                                <h3>Java Travel</h3>
                             </strong>
-                            <br>
-                            20 Cafe Tempat Nongkrong di Jakarta yang Paling Hits
-                        </h1>
-                        <p>
-                            Setelah lelah seharian bekerja, biasanya pada malam hari dapat diisi kegiatan dengan nongkrong di cafe. Tidak hanya sekedar nongkrong saja, dengan bertemu banyak orang di cafe juga dapat menghasilkan sesuatu yang bernilai positif.
-                        </p>
+                            <h2>20 Cafe Tempat Nongkrong di Jakarta yang Paling Hits</h2>
+                        </div>
+                        <div style="font-size: 16px; text-align: justify">
+                            <p>
+                                Setelah lelah seharian bekerja, biasanya pada malam hari dapat diisi kegiatan dengan nongkrong di cafe. Tidak hanya sekedar nongkrong saja, dengan bertemu banyak orang di cafe juga dapat menghasilkan sesuatu yang bernilai positif.
+                            </p>
+                        </div>
                         <div class="full margin_top_30">
-                            <a class="main_bt" href="https://www.javatravel.net/cafe-jakarta">Read More</a>
+                            <a class="btn readmore_bt btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" href="https://www.javatravel.net/cafe-jakarta">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="full margin_top_30">
-                        <img class="img-responsive layout_padding" src="images/java_travel.jpg" alt="#" /> 
+                        <img class="img-responsive layout_padding" src="images/java_travel.jpg" alt="Article1" /> 
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    {{-- End of Article 1 --}}
+    
+    {{-- Article 2 --}}
+    <div id="article2" class="layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="images/brilio_food.jpg" alt="Article2" />
+                </div>
+                <div class="col-md-6">
+                    <div class="heading margin_top_30" style="padding-top: 10px">
+                        <strong>
+                            <h3>Briliofood.net</h3>
+                        </strong>
+                        <h2>30 Kafe instagramable di Jakarta, unik dan cocok untuk hangout</h2>
+                    </div>
+                    <div class="full margin_top_20" style="keterangan; font-size: 16px; text-align: justify">
+                        <p>
+                            Hangout atau nongkrong kini sudah menjadi lifestyle bagi anak muda, pelajar, mahasiswa hingga para pekerja. Tidak terkecuali bagi orang-orang yang hidup di Jakarta, hangout bisa untuk melepaskan kepenatan setelah seharian beraktivitas.
+                        </p>
+                    </div>
+                    <div class="full margin_top_30">
+                        <a class="btn readmore_bt btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" href="https://www.briliofood.net/tempat-makan/30-kafe-instagramable-di-jakarta-unik-dan-cocok-untuk-hangout-190809a.html">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- End of Article 2 --}}
+
+    {{-- Article 3 --}}
+    <div id="article3" class="layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="full">
+                        <div class="heading margin_top_30" style="padding-top: 10px">
+                            <strong>
+                                <h3>iTrip</h3>
+                            </strong>
+                            <h2>15 Cafe Instagramable di Jakarta yang Bikin Betah Nongkrong</h2>
+                        </div>
+                        <div style="font-size: 16px; text-align: justify">
+                            <p>
+                                Aktivitas santai seperti nongkrong agaknya telah menjadi gaya hidup bagi para anak muda maupun para pekerja. Dengan hangout di kafe dianggap menjadi cara ampuh melepaskan rasa penat akibat aktivitas sehari-hari.
+                            </p>
+                        </div>
+                        <div class="full margin_top_30">
+                            <a class="btn readmore_bt btn-outline-success" href="https://www.itrip.id/cafe-jakarta" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="full margin_top_30">
+                        <img class="img-responsive layout_padding" src="images/itrip.jpg" alt="Article3" /> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- End of Article 3 --}}
 @endsection
