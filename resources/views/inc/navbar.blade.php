@@ -14,25 +14,34 @@
                 </li>
             </ul>
             <form class="d-flex">
-                <input class="form-control me-2" style="font-size: 15px" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Search</button>
+                <input class="form-control me-2" style="font-size: 15px;position: relative;right: 19cm " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40; position: relative;right: 19cm" type="submit">Search</button>
             </form>
             <a class="navbar-brand; top: 50%" style="position: absolute; left: 50%" href="{{ url('/')}}">
                 <img src="images/logo.png" alt="Coffee Beans" width="100" height="85"/>
             </a>
         </div>
         
-        <div style="float: right">
-            <form class="d-flex">
-               <a href="{{ route('login')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Login</a>
-            </form>
-        </div>
-        <div style="float: right">
-            <form class="d-flex">
-                <div class="container">
-                    <a href="{{ route('register')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Register</a>
-                </div>
-            </form>
+        <div style="float: right; padding-right: 20px">
+            <ul class="navbar-nav">
+                @if (Auth::guest())
+                    @include('auth.login')
+                    @include('auth.register')
+                @else   
+                <li>
+                    <a class="nav-link active" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();"
+                    aria-current="page" style="font-size: 25px">
+                        Logout
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                </li>      
+                @endif
+            </ul>
         </div>
     </div>
 </nav>
