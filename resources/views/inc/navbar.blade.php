@@ -1,17 +1,10 @@
- <!-- Bootstrap CSS -->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-rel="stylesheet"
-integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-crossorigin="anonymous"
-/>
-<nav class="navbar navbar-expand navbar-dark" style="background-color: #A67B5B; position: absolute; width: 100%; padding-top: 10px">
+<nav class="navbar navbar-expand navbar-dark" style="background-color: #A67B5B; top: 0; width: 100%; padding-top: 10px">
     <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample02">
+        <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <a class="nav-link" style="font-size: 15px; color: white" aria-current="page" href="{{ url('/')}}">Home</a>
@@ -32,7 +25,6 @@ crossorigin="anonymous"
         <div style="float: right">
             <form class="d-flex">
                <a href="{{ route('login')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Login</a>
-               
             </form>
         </div>
         <div style="float: right">
