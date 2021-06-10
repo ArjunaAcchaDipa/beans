@@ -151,6 +151,7 @@
                             </td>
                         </tr>
                     </table>        
+
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

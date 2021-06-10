@@ -14,7 +14,7 @@
                 </li>
             </ul>
             <form class="d-flex">
-                <input class="form-control me-2" style="font-size: 15px;position: relative;right: 19cm " type="search" placeholder="Cofee Shop" aria-label="Search">
+                <input class="form-control me-2" style="font-size: 15px; position: relative; right: 19cm" type="search" placeholder="Coffee Shop" aria-label="Search">
                 <button class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40; position: relative;right: 19cm" type="submit">Search</button>
             </form>
             <a class="navbar-brand; top: 50%" style="position: absolute; left: 50%" href="{{ url('/')}}">
@@ -41,7 +41,7 @@
                 @else   
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#282E40;font-size: 15px">
-                      Hello, Nama
+                      Hello, {{ Auth::user()->name }}
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a  class="dropdown-item" href="{{ url('profile') }}" aria-current="page" style="font-size: 15px">

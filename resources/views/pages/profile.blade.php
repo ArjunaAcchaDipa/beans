@@ -1,5 +1,3 @@
-@extends('layouts.app')
-
 <style>
     .beans_bg {
         background: #A67B5B;
@@ -33,16 +31,79 @@
         text-align: left;
         color: #282e40;
     }
+    .description {
+        background: #282e40;
+        margin-top: -1px;
+        position: relative;
+        width: 100%;
+    }
     button.readmore_bt {
         background: #282e40;
         color: #111;
     }
 </style>
 
-@section('content')
-    {{-- Profile Page --}}
-    <div class="container">
-        
-    </div>
-    {{-- End of Profile Page --}}
-@endsection
+@if (Auth::guest())
+    <meta http-equiv="refresh" content="0; url = {{ route('login') }}" />
+@else
+    @extends('layouts.app')
+    
+    @section('content')
+        {{-- Profile Page --}}
+        <div id="profile" class="layout_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img class="img-responsive" src="images/profile.png" alt="Profile Picture" style="width: 100px; height: 100px; margin-left: 60px"/>
+                    </div>
+                    <div class="col-md-9">
+                        <div style="padding-top: 20px">
+                            <h1>{{ Auth::user()->name }}</h1>
+                            <div style="font-size: 18px">
+                                {{ Auth::user()->review }} Review
+                                {{ Auth::user()->followers }} Followers
+                                {{ Auth::user()->following }} Following
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div id="description" class="layout_padding" style="padding-left: 4%">
+                        <div class="full description text_align_center">
+                            <h2 class="white_font" style="text-align: left; padding: 25px">
+                                Coffee Lovers!<br>
+                                No Coffee No Party!
+                            </h2>
+                        </div> 
+                    </div>
+                </div>
+
+                @if (Auth::user()->review > 0)
+                    <div class="container">
+                        <div id="review" class="layout_padding" style="padding-left: 4%; padding-top: 10px">
+                            <h1 style="text-align: left">
+                                Review
+                            </h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="container" src="images/cafe_batavia.jpg" alt="Image Error" style="margin-left: 50px; margin-right: 10px; width: 350px; height: 234px"/>
+                            </div>
+                            <div class="col-md-6 description white_font" style="width: 65%; padding-top: 10px">
+                                <div id="cafe_rating" style="padding-top: 10px">
+                                    <h1 style="font-size: 20px">Cafe Batavia</h1>
+                                    <h1 style="font-size: 20px">4.5⭐</h1>
+                                </div>
+                                <div id="caption_review" style="font-size: 18px">
+                                    "Suka banget sama tempat dan suasana dari kafe yang sangat nyaman. Recommended banget buat anak kuliahan 👌"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endif
+            </div>
+        </div>
+        {{-- End of Profile Page --}}
+    @endsection
+@endif

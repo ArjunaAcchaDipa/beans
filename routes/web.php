@@ -21,8 +21,12 @@ Route::get('/', function () {
     return view("pages.index");
 });
 
-Route::get('/about', function () {
-    return view('pages.about');
+Route::get('/profile', function () {
+    return view('pages.profile');
+});
+
+Route::get('/forbidden', function () {
+    return view("pages.forbidden");
 });
 
 Auth::routes();
