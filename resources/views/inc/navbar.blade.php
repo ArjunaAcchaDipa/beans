@@ -14,7 +14,7 @@
                 </li>
             </ul>
             <form class="d-flex">
-                <input class="form-control me-2" style="font-size: 15px;position: relative;right: 19cm " type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" style="font-size: 15px; position: relative; right: 19cm" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40; position: relative;right: 19cm" type="submit">Search</button>
             </form>
             <a class="navbar-brand; top: 50%" style="position: absolute; left: 50%" href="{{ url('/')}}">
