@@ -85,7 +85,7 @@
                         </div>
                         {{-- text keterangan --}}
                         <div class="full our_recommendation_highlight text_align_center">
-                            <a href="https://www.google.com/maps/place/First+Crack+Coffee+Pluit/@-6.117954,106.785658,15z/data=!4m2!3m1!1s0x0:0x76e8a98bd3283eae?sa=X&ved=2ahUKEwjcv__piIXxAhVGyjgGHb9DDXYQ_BIwCnoECEMQBQ">
+                            <a style="text-decoration:none" href="https://www.google.com/maps/place/First+Crack+Coffee+Pluit/@-6.117954,106.785658,15z/data=!4m2!3m1!1s0x0:0x76e8a98bd3283eae?sa=X&ved=2ahUKEwjcv__piIXxAhVGyjgGHb9DDXYQ_BIwCnoECEMQBQ">
                                 <h2 class="white_font">First Crack Coffee, Pluit</h2>
                                 <p>
                                     <div class="white_font">
@@ -104,7 +104,7 @@
                         </div> 
                         {{-- text keterangan --}}
                         <div class="full our_recommendation_highlight text_align_center">
-                            <a href="https://www.google.com/maps/place/Monks/@-6.1638517,106.9112396,15z/data=!4m5!3m4!1s0x0:0xb9f5722c6f309c13!8m2!3d-6.1638341!4d106.9112511">
+                            <a style="text-decoration:none" href="https://www.google.com/maps/place/Monks/@-6.1638517,106.9112396,15z/data=!4m5!3m4!1s0x0:0xb9f5722c6f309c13!8m2!3d-6.1638341!4d106.9112511">
                                 <h2 class="white_font">Monks, Kelapa Gading</h2>
                                 <p>
                                     <div class="white_font">
@@ -123,7 +123,7 @@
                         </div> 
                         {{-- text keterangan --}}
                         <div class="full our_recommendation_highlight text_align_center">
-                            <a href="https://www.google.com/maps/place/Cafe+Batavia/@-6.1344685,106.8105859,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6a1dff154fd569:0xa38223eb6637cf44!8m2!3d-6.1344685!4d106.8127746">
+                            <a style="text-decoration:none" href="https://www.google.com/maps/place/Cafe+Batavia/@-6.1344685,106.8105859,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6a1dff154fd569:0xa38223eb6637cf44!8m2!3d-6.1344685!4d106.8127746">
                                 <h2 class="white_font">Cafe Batavia</h2>
                                 <p>
                                     <div class="white_font">

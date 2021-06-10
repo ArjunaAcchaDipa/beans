@@ -46,6 +46,7 @@
                             <span>
                                 <img src="images/twitter_logo.png" width="58" height="58">
                             </span>
+                            <br>Beans © 2021
                         </p>
                     </div>
                 </div>

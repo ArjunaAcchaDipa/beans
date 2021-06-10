@@ -22,11 +22,22 @@
             </a>
         </div>
         
-        <div style="float: left; padding-left: 4%">
+        <div style="float: left">
             <ul class="navbar-nav">
                 @if (Auth::guest())
-                    @include('auth.login')
-                    @include('auth.register')
+                <div style="float: right">
+                    <form class="d-flex">
+                       <a href="{{ route('login')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Login</a>
+        
+                    </form>
+                </div>
+                <div style="float: right">
+                    <form class="d-flex">
+                        <div class="container">
+                            <a href="{{ route('register')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Register</a>
+                        </div>
+                    </form>
+                </div>
                 @else   
                     <li>
                         <a class="nav-link active" href="{{ route('logout') }}"
