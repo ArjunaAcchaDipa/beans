@@ -25,6 +25,10 @@ Route::get('/profile', function () {
     return view('pages.profile');
 });
 
+Route::get('/forbidden', function () {
+    return view("pages.forbidden");
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
