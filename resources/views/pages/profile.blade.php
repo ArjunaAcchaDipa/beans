@@ -54,11 +54,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
-                        <img class="img-responsive" src="images/profile.png" alt="Profile Picture" style="width: 100px; height: 100px; margin-left: 60px"/>
+                        <img class="img-responsive" src={{ Auth::user()->profile_pict }} alt="Profile Picture" style="width: 100px; height: 100px; margin-left: 65px"/>
                     </div>
                     <div class="col-md-9">
-                        <div style="padding-top: 20px">
-                            <h1>{{ Auth::user()->name }}</h1>
+                        <div class="row" style="padding-top: 5px">
+                            <div style="font-size: 25px">
+                                <strong>{{ Auth::user()->name }}</strong>
+                                <a style="font-size: 12px; text-decoration: none" href="{{ route('editprofile', ['id'=>Auth::user()->id]) }}">Change</a>
+                            </div>
                             <div style="font-size: 18px">
                                 {{ Auth::user()->review }} Review
                                 {{ Auth::user()->followers }} Followers
@@ -72,8 +75,7 @@
                     <div id="description" class="layout_padding" style="padding-left: 4%">
                         <div class="full description text_align_center">
                             <h2 class="white_font" style="text-align: left; padding: 25px">
-                                Coffee Lovers!<br>
-                                No Coffee No Party!
+                                {{ Auth::user()->description }}
                             </h2>
                         </div> 
                     </div>

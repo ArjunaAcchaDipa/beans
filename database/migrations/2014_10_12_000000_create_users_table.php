@@ -17,6 +17,8 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('profile_pict')->default('/images/profile.png');
+            $table->string('description');
             $table->integer('review')->unsigned()->default('0');
             $table->integer('followers')->unsigned()->default('0');
             $table->integer('following')->unsigned()->default('0');
