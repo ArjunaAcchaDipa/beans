@@ -36,15 +36,15 @@
                         <h3>Follow Us</h3>
                         <p>
                             <span>
-                                <img src="images/fb_logo.png" width="38" height="38">
+                                <img src="/images/fb_logo.png" width="38" height="38">
                             </span>
                             <span>
                                 <a href="https://instagram.com/beans_coffeemap" style="margin-left: 10px">
-                                    <img src="images/ig_logo.png" width="46" height="46">
+                                    <img src="/images/ig_logo.png" width="46" height="46">
                                 </a>
                             </span>
                             <span>
-                                <img src="images/twitter_logo.png" width="58" height="58">
+                                <img src="/images/twitter_logo.png" width="58" height="58">
                             </span>
                             <br>Beans © 2021
                         </p>
