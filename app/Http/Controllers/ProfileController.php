@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 
 class ProfileController extends Controller
@@ -36,7 +37,7 @@ class ProfileController extends Controller
         }
         if ($req->password)
         {
-            $data->password = $req->password;
+            $data->password = Hash::make($req->password);
         }
 
         $data->save();

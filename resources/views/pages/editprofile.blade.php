@@ -91,7 +91,7 @@
                         </div>
                         <div class="col-sm-12">
                             <h3>Password:</h3>
-                            <input name="password" class="form-control textarea" placeholder="Message" style="font-size: 15px">
+                            <input name="password" type="password" class="form-control textarea" placeholder="Message" style="font-size: 15px">
                             <br>
                             <br>
                         </div>
