@@ -81,7 +81,7 @@
                         </div>
                         <div class="col-sm-12">
                             <h3>Image path:</h3>
-                            <input name="profile_pict" class="form-control" placeholder="/images/profile.png" type="text" style="font-size: 15px">
+                            <input name="profile_pict" class="form-control" placeholder="Insert Picture" type="text" style="font-size: 15px">
                             <br>
                         </div>
                         <div class="col-sm-12">

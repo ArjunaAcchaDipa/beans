@@ -96,8 +96,10 @@
                                 </td>   
                                 <td> 
                                     <div class="container">
-                                        <a style="text-decoration:none"  href="https://www.google.com/maps/place/First+Crack+Coffee+Pluit/@-6.117954,106.785658,15z/data=!4m2!3m1!1s0x0:0x76e8a98bd3283eae?sa=X&ved=2ahUKEwjcv__piIXxAhVGyjgGHb9DDXYQ_BIwCnoECEMQBQ">
+                                        <a href="https://firstcrackcoffee.id/" style="text-decoration:none" target="_blank" rel="noopener noreferrer">
                                             <h2 class="white_font" style="font-size: 30px">First Crack Coffee, Pluit</h2>
+                                        </a>
+                                        <a style="text-decoration:none"  href="https://www.google.com/maps/place/First+Crack+Coffee+Pluit/@-6.117954,106.785658,15z/data=!4m2!3m1!1s0x0:0x76e8a98bd3283eae?sa=X&ved=2ahUKEwjcv__piIXxAhVGyjgGHb9DDXYQ_BIwCnoECEMQBQ">
                                             <p class="white_font" style="margin-bottom: 67%;"> 
                                                 Pluit Indah No.31, RT.1/RW.7, Pluit, Kec. Penjaringan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14450
                                             </p>
@@ -118,8 +120,8 @@
                                 </td>
                                 <td >
                                     <div class="container">
+                                        <h2 class="white_font" style="font-size: 30px">Monks, Kelapa Gading</h2>
                                         <a style="text-decoration:none " href="https://www.google.com/maps/place/Monks/@-6.1638517,106.9112396,15z/data=!4m5!3m4!1s0x0:0xb9f5722c6f309c13!8m2!3d-6.1638341!4d106.9112511">
-                                            <h2 class="white_font" style="font-size: 30px">Monks, Kelapa Gading</h2>
                                             <p class="white_font" style="margin-bottom: 75%" >
                                                 Komp. Graha Boulevard Timur Summarecon Kelapa Gading Blok ND1/51, RT.8/RW.12, Pegangsaan Dua, Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14550
                                             </p>
@@ -140,8 +142,11 @@
                                 </td>
                                 <td >
                                     <div class="container">
-                                        <a style="text-decoration:none " href="https://www.google.com/maps/place/Cafe+Batavia/@-6.1344685,106.8105859,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6a1dff154fd569:0xa38223eb6637cf44!8m2!3d-6.1344685!4d106.8127746">
+                                        <a href="https://www.cafebatavia.com/" style="text-decoration:none" target="_blank" rel="noopener noreferrer">
                                             <h2 class="white_font" style="font-size: 30px">Cafe Batavia</h2>
+
+                                        </a>
+                                        <a style="text-decoration:none " href="https://www.google.com/maps/place/Cafe+Batavia/@-6.1344685,106.8105859,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6a1dff154fd569:0xa38223eb6637cf44!8m2!3d-6.1344685!4d106.8127746">
                                             <p class="white_font" style="margin-bottom: 78%" >
                                                 Pluit Indah No.31, RT.1/RW.7, Pluit, Kec. Penjaringan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14450
                                             </p>
