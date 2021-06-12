@@ -23,8 +23,8 @@
                 @if (Auth::guest())
                     <div class="container" style="float: right">
                         <form class="d-inline-flex">
-                            <a href="{{ route('login')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40; margin-right: 5px" type="submit">Login</a>
-                            <a href="{{ route('register')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Register</a>
+                            <a name="login" href="{{ route('login')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40; margin-right: 5px" type="submit">Login</a>
+                            <a name="password" href="{{ route('register')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Register</a>
                         </form>
                     </div>
                 @else   
