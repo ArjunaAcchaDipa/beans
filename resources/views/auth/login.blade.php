@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8" style="font-size: 15px">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
@@ -53,7 +53,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button name="login" type="submit" class="btn btn-primary">
+                                <button name="login" type="submit" class="btn btn-primary" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40">
                                     {{ __('Login') }}
                                 </button>
 
