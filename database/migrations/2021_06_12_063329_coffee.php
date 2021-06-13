@@ -20,6 +20,7 @@ class coffee extends Migration
             $table->string('shop_address')->nullable();
             $table->string('shop_website')->nullable();
             $table->string('shop_maps')->nullable();
+            $table->string('phone')->nullable();
             $table->string('shop_pict')->default('images/profile.png');
             $table->string('shop_pict1')->default('images/profile.png');
             $table->string('shop_pict2')->default('images/profile.png');

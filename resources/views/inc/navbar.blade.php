@@ -5,9 +5,9 @@
                 <li class="nav-item container">
                     <a class="nav-link" style="font-size: 15px; color: white" aria-current="page" href="{{ url('/')}}">Home</a>
                 </li>
-                <li class="nav-item container">
+                {{-- <li class="nav-item container">
                     <a class="nav-link" style="font-size: 15px; color: white" href="/about">About</a>
-                </li>
+                </li> --}}
             </ul>
             <form class="d-flex" style="padding-top: 6px; margin-bottom: 10px; margin-left: 200px; position: absolute">
                 <input class="form-control me-2" style="font-size: 15px; right: 18cm; width: 204px; height: 32px" type="search" placeholder="Coffee Shop" aria-label="Search">

@@ -3,7 +3,6 @@
 @section('content')
     <div class="container-fluid" style="margin-left:115px">
             <h1>{{ $shop->shop_name }}</h1>
-
     </div>
     <div class="container-fluid" style="margin-left:115px">
             <h2>{{ $shop->rating }}⭐</h2>
@@ -37,7 +36,7 @@
                         <img src="/{{ $shop->location_pict }}" alt="map" height="250" width="280">
                     </a>
                     <h5 style="padding-right:20px; padding-top:10px">{{ $shop->shop_address }}</h5>
-                    <h5> Phone: (021) 21882368 </h5>
+                    <h5> Phone: {{ $shop->phone }} </h5>
                 </div>
             </div>
         </div>
@@ -46,8 +45,7 @@
             <h2> Review </h2>
             @if(Auth::user())
                 <form action="target" method="POST">
-                    <textarea rows="8" cols="100" name="comments" id="comments" style="font-family: sans-serif; font-size: 10px;" placeholder="Review here!">
-                    </textarea>
+                    <textarea name="comments" rows="8" cols="100" class="form-control" placeholder="Review here!" type="text" style="font-size: 15px; width: 80%"></textarea>
                     <br>
                     <input type="submit" class="wpcf7-form-control wpcf7-submit" value="Submit" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40">
                 </form>
