@@ -53,6 +53,6 @@ class ProfileController extends Controller
 
         $data->save();
 
-        return redirect('profile');
+        return redirect()->route('profile', ['id'=>$req->id]);
     }
 }

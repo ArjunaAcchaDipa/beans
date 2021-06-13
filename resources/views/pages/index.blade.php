@@ -97,7 +97,7 @@
                                     <td> 
                                         <div class="container">
                                             <a href="{{ route('coffeeshop', ['id'=>$shop->id]) }}" style="text-decoration: none">
-                                                <h2 class="white_font" style="font-size: 30px">{{ $shop->shop_name }}</h2>
+                                                <h2 name="coffee_shop_name" class="white_font" style="font-size: 30px">{{ $shop->shop_name }}</h2>
                                             </a>
                                             <a  href="{{ $shop->shop_website }}" style="text-decoration:none"  target="_blank" rel="noopener noreferrer">
                                                 <p class="white_font" style="margin-bottom: 67%;"> 

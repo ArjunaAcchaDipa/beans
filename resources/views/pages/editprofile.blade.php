@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <button class="bt_send white_font" style="font-size: 15px; float: right; margin-right: 2%" type="submit">
-                        Send
+                        Confirm
                     </button>
                 </form>
                 {{-- End of Form Edit Profile --}}

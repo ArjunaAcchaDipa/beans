@@ -3,7 +3,7 @@
         <div class="collapse navbar-collapse container" id="navbar" style="padding-left: 5%">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item container">
-                    <a class="nav-link" style="font-size: 15px; color: white" aria-current="page" href="{{ url('/')}}">Home</a>
+                    <a id="home" class="nav-link" style="font-size: 15px; color: white" aria-current="page" href="{{ url('/')}}">Home</a>
                 </li>
                 {{-- <li class="nav-item container">
                     <a class="nav-link" style="font-size: 15px; color: white" href="/about">About</a>

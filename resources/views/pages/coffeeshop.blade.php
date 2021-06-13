@@ -59,9 +59,9 @@
                     @csrf
                     <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                     <input type="hidden" name="shop_id" value="{{ $shop->id }}">
-                    <textarea name="review_body" rows="8" cols="100" class="form-control" placeholder="Review here!" type="text" style="font-size: 15px; width: 80%"></textarea>
+                    <textarea id="input_review" name="review_body" rows="8" cols="100" class="form-control" placeholder="Review here!" type="text" style="font-size: 15px; width: 80%"></textarea>
                     <br>
-                    <input type="submit" class="wpcf7-form-control wpcf7-submit" value="Submit" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40">
+                    <input id="input_button" type="submit" class="wpcf7-form-control wpcf7-submit" value="Submit" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40">
                 </form>
             @endif
         </div>
