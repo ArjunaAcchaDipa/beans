@@ -63,7 +63,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button name="register" type="submit" class="btn btn-primary" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40">
+                                <button id="register" type="submit" class="btn btn-primary" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40">
                                     {{ __('Register') }}
                                 </button>
                             </div>

@@ -24,7 +24,7 @@
                     <div class="container" style="float: right">
                         <form class="d-inline-flex">
                             <a name="login" href="{{ route('login')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40; margin-right: 5px" type="submit">Login</a>
-                            <a name="password" href="{{ route('register')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Register</a>
+                            <a name="register" href="{{ route('register')}}" class="btn btn-outline-success" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40" type="submit">Register</a>
                         </form>
                     </div>
                 @else   
@@ -33,7 +33,7 @@
                             Hello, {{ Auth::user()->name }}
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a  class="dropdown-item" href="{{ url('profile') }}" aria-current="page" style="font-size: 15px">
+                            <a  class="dropdown-item" href="{{ route('profile', ['id'=>Auth::user()->id]) }}" aria-current="page" style="font-size: 15px">
                                 Profile
                             </a> 
                             

@@ -88,20 +88,33 @@
                                 Review
                             </h1>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img class="container" src="images/cafe_batavia.jpg" alt="Image Error" style="margin-left: 50px; margin-right: 10px; width: 350px; height: 234px"/>
-                            </div>
-                            <div class="col-md-6 description white_font" style="width: 65%; padding-top: 10px">
-                                <div id="cafe_rating" style="padding-top: 10px">
-                                    <h1 style="font-size: 20px">Cafe Batavia</h1>
-                                    <h1 style="font-size: 20px">4.5⭐</h1>
-                                </div>
-                                <div id="caption_review" style="font-size: 18px">
-                                    "Suka banget sama tempat dan suasana dari kafe yang sangat nyaman. Recommended banget buat anak kuliahan 👌"
-                                </div>
-                            </div>
-                        </div>
+                        @foreach ($reviews as $review)
+                            @if($review->user_id == Auth::user()->id)
+                                @foreach ($shops as $shop)
+                                    @if($shop->id == $review->shop_id)
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img class="container" src="/{{ $shop->shop_pict }}" alt="Image Error" style="margin-left: 50px; margin-right: 10px; width: 350px; height: 234px"/>
+                                            </div>
+                                            <div class="col-md-6 description white_font" style="width: 65%; padding-top: 10px">
+                                                <div id="cafe_rating" style="padding-top: 10px">
+                                                    <a href="{{ route('coffeeshop', ['id'=>$shop->id]) }}" style="text-decoration: none; color: white">
+                                                        <h1 style="font-size: 20px">{{ $shop->shop_name }}</h1>
+                                                    </a>
+                                                    <h1 style="font-size: 20px">{{ $shop->rating }}⭐</h1>
+                                                </div>
+                                                <br>
+                                                <div id="caption_review" style="font-size: 16px">
+                                                    {{ $review->review_body }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                    @endif
+                                @endforeach
+                            @endif
+                        @endforeach
                     </div>
                 @endif
             </div>

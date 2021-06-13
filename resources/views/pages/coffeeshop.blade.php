@@ -43,9 +43,23 @@
 
         <div class="col-md-12" style="padding-top:40px;">
             <h2> Review </h2>
+            <hr style="width: 80%">
+            @foreach ($reviews as $review)
+                @if($review->shop_id == $shop->id)
+                    @foreach ($users as $user)
+                        @if($user->id == $review->user_id)
+                            <h3>{{ $user->name }}</h3>
+                            <a style="font-size: 15px">☕ {{ $review->review_body }}</a>
+                        @endif
+                    @endforeach
+                @endif
+            @endforeach
             @if(Auth::user())
-                <form action="target" method="POST">
-                    <textarea name="comments" rows="8" cols="100" class="form-control" placeholder="Review here!" type="text" style="font-size: 15px; width: 80%"></textarea>
+                <form action="/review" method="POST">
+                    @csrf
+                    <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
+                    <input type="hidden" name="shop_id" value="{{ $shop->id }}">
+                    <textarea name="review_body" rows="8" cols="100" class="form-control" placeholder="Review here!" type="text" style="font-size: 15px; width: 80%"></textarea>
                     <br>
                     <input type="submit" class="wpcf7-form-control wpcf7-submit" value="Submit" style="font-size: 15px; color: white; background-color: #282E40; border: #282E40">
                 </form>

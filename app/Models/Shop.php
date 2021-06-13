@@ -19,7 +19,6 @@ class Shop extends Model
         'menu_pict',
         'menu_pict1',
         'location_pict',
-        'review'
     ];
 
     // public function comment(){

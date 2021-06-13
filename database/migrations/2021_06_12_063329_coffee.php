@@ -29,7 +29,6 @@ class coffee extends Migration
             $table->string('menu_pict')->default('images/profile.png');
             $table->string('menu_pict1')->default('images/profile.png');
             $table->string('location_pict')->default('images/profile.png');
-            $table->string('review')->nullable();
             $table->timestamps();
         });
     }

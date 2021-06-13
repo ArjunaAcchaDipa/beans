@@ -80,98 +80,42 @@
                     <li data-target="#CarouselCoffee" data-slide-to="1"></li>
                     <li data-target="#CarouselCoffee" data-slide-to="2"></li>
                 </ol>
+                <div class="carousel-inner">
                 @foreach($shops as $shop)
                     @if(($shop->id) == 1)
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <div class="container">
-                                                <img src="/{{ $shop->shop_pict }}" alt="Our Recommendation Carousel" style=" height:500px">
-                                            </div>
-                                        </td>   
-                                        <td> 
-                                            <div class="container">
-                                                <a href="{{ route('coffeeshop', ['id'=>$shop->id]) }}" style="text-decoration: none">
-                                                    <h2 class="white_font" style="font-size: 30px">{{ $shop->shop_name }}</h2>
-                                                </a>
-                                                <a  href="{{ $shop->shop_website }}" style="text-decoration:none"  target="_blank" rel="noopener noreferrer">
-                                                    <p class="white_font" style="margin-bottom: 67%;"> 
-                                                        Visit website
-                                                    </p>
-                                                </a>
-                                                <a style="text-decoration:none"  target="_blank" rel="noopener noreferrer" href="{{ $shop->shop_maps }}">
-                                                    <p class="white_font"> 
-                                                        {{ $shop->shop_address }}
-                                                    </p>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>    
-                            </div>
-                        </div>
-                    @elseif(($shop->id) == 2)
+                        <div class="carousel-item active">
+                    @else
                         <div class="carousel-item">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <div class="container">
-                                            <img src="/{{ $shop->shop_pict }}" alt="Our Recommendation Carousel" style=" height:500px">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="container">
-                                            <a href="{{ route('coffeeshop', ['id'=>$shop->id]) }}" style="text-decoration: none">
-                                                <h2 class="white_font" style="font-size: 30px">{{ $shop->shop_name }}</h2>
-                                            </a>
-                                            <a href="{{ $shop->shop_website }}" style="text-decoration:none" target="_blank" rel="noopener noreferrer">
-                                                <p class="white_font" style="margin-bottom: 67%;"> 
-                                                    Visit website
-                                                </p>
-                                            </a>
-                                            <a style="text-decoration: none"  target="_blank" rel="noopener noreferrer" href="{{ $shop->shop_maps }}">
-                                                <p class="white_font"> 
-                                                    {{ $shop->shop_address }}
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    @else()
-                        <div class="carousel-item">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <div class="container">
-                                            <img src="/{{ $shop->shop_pict }}" alt="Our Recommendation Carousel" style=" height:500px">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="container">
-                                            <a href="{{ route('coffeeshop', ['id'=>$shop->id]) }}" style="text-decoration: none">
-                                                <h2 class="white_font" style="font-size: 30px">{{ $shop->shop_name }}</h2>
-                                            </a>
-                                            <a href="{{ $shop->shop_website }}" style="text-decoration:none" target="_blank" rel="noopener noreferrer">
-                                                <p class="white_font" style="margin-bottom: 67%;"> 
-                                                    Visit website
-                                                </p>
-                                            </a>
-                                            <a style="text-decoration: none"  target="_blank" rel="noopener noreferrer" href="{{ $shop->shop_maps }}">
-                                                <p class="white_font"> 
-                                                    {{ $shop->shop_address }}
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
                     @endif
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="container">
+                                            <img src="/{{ $shop->shop_pict }}" alt="Our Recommendation Carousel" style=" height:500px">
+                                        </div>
+                                    </td>   
+                                    <td> 
+                                        <div class="container">
+                                            <a href="{{ route('coffeeshop', ['id'=>$shop->id]) }}" style="text-decoration: none">
+                                                <h2 class="white_font" style="font-size: 30px">{{ $shop->shop_name }}</h2>
+                                            </a>
+                                            <a  href="{{ $shop->shop_website }}" style="text-decoration:none"  target="_blank" rel="noopener noreferrer">
+                                                <p class="white_font" style="margin-bottom: 67%;"> 
+                                                    Visit website
+                                                </p>
+                                            </a>
+                                            <a style="text-decoration:none"  target="_blank" rel="noopener noreferrer" href="{{ $shop->shop_maps }}">
+                                                <p class="white_font"> 
+                                                    {{ $shop->shop_address }}
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>    
+                        </div> <!-- Div gabung sama if -->
                 @endforeach
+                </div>
                 <a class="carousel-control-prev" href="#CarouselCoffee" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -183,6 +127,7 @@
             </div> 
                 <br>
                 <br>
+                
         </div>  
     </div>
     
