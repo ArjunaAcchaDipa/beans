@@ -70,114 +70,85 @@
             <div class="row">
             <div class="col-md-11">
                     <div class="heading full text_align_center">
-                        {{-- reference to Our Recommendation --}}
-                        <a href="/ourreccomendation">
-                            <h2 class="white_font full text_align_left" style="padding-bottom: 20px">Our Recommendation</h2>
-                        </a>
+                        <h2 class="white_font full text_align_left" style="padding-bottom: 20px">Our Recommendation</h2>
                     </div>
                 </div>
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="CarouselCoffee" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#CarouselCoffee" data-slide-to="0" class="active"></li>
+                    <li data-target="#CarouselCoffee" data-slide-to="1"></li>
+                    <li data-target="#CarouselCoffee" data-slide-to="2"></li>
                 </ol>
-                
-                    @foreach($shops as $shop)
-                        {{-- recom-1 --}}
-                        @if(($shop->id)==1)
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <div class="container">
-                                                    <img src="/{{$shop->shop_pict}}" alt="First slide" style=" height:500px">
-                                                </div>
-                                            </td>   
-                                            <td> 
-
-                                                <div class="container">
-                                                    <a href="{{ route('coffeeshop', ['id'=>$shop->id])}}" style="text-decoration:none" >
-                                                        <h2 class="white_font" style="font-size: 30px">{{$shop->shop_name}}, Pluit</h2>
-                                                    </a>
-                                                    <a  href="https://firstcrackcoffee.id/" style="text-decoration:none"  target="_blank" rel="noopener noreferrer">
-                                                        <p class="white_font" style="margin-bottom: 67%;"> 
-                                                            Visit website
-                                                        </p>
-                                                    </a>
-                                                    <a style="text-decoration:none"  target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/First+Crack+Coffee+Pluit/@-6.117954,106.785658,15z/data=!4m2!3m1!1s0x0:0x76e8a98bd3283eae?sa=X&ved=2ahUKEwjcv__piIXxAhVGyjgGHb9DDXYQ_BIwCnoECEMQBQ">
-                                                        <p class="white_font"> 
-                                                            Pluit Indah No.31, RT.1/RW.7, Pluit, Kec. Penjaringan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14450
-                                                        </p>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>    
-                                </div>
-                            </div>
-                        @elseif(($shop->id)==2)
-                            <div class="carousel-item"> 
+                @foreach($shops as $shop)
+                    @if(($shop->id) == 1)
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
                                 <table>
                                     <tr>
                                         <td>
                                             <div class="container">
-                                                <img src="images/monks_KG.jpg" alt="Second slide" style="height: 500px">
+                                                <img src="/{{ $shop->shop_pict }}" alt="Our Recommendation Carousel" style=" height:500px">
                                             </div>
-                                        </td>
-                                        <td >
+                                        </td>   
+                                        <td> 
                                             <div class="container">
-                                                <a href="{{url('/coffeeshop')}}" style="text-decoration:none; margin-bottom: 75%">
-                                                    <h2 class="white_font" style="font-size: 30px">Monks, Kelapa Gading</h2>
+                                                <a href="{{ route('coffeeshop', ['id'=>$shop->id]) }}" style="text-decoration: none">
+                                                    <h2 class="white_font" style="font-size: 30px">{{ $shop->shop_name }}</h2>
                                                 </a>
-                                                <a style="text-decoration:none " href="https://www.google.com/maps/place/Monks/@-6.1638517,106.9112396,15z/data=!4m5!3m4!1s0x0:0xb9f5722c6f309c13!8m2!3d-6.1638341!4d106.9112511">
-                                                    <p class="white_font"  >
-                                                        Komp. Graha Boulevard Timur Summarecon Kelapa Gading Blok ND1/51, RT.8/RW.12, Pegangsaan Dua, Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14550
+                                                <a  href="{{ $shop->shop_website }}" style="text-decoration:none"  target="_blank" rel="noopener noreferrer">
+                                                    <p class="white_font" style="margin-bottom: 67%;"> 
+                                                        Visit website
+                                                    </p>
+                                                </a>
+                                                <a style="text-decoration:none"  target="_blank" rel="noopener noreferrer" href="{{ $shop->shop_maps }}">
+                                                    <p class="white_font"> 
+                                                        {{ $shop->shop_address }}
                                                     </p>
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
-                                </table>        
+                                </table>    
                             </div>
-                        @else
-                            <div class="carousel-item">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <div class="container">
-                                                <img src="images/cafe_batavia.jpg" alt="Second slide" style="height: 500px">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="{{url('/coffeeshop')}}" style="text-decoration:none" >
-                                                <h2 class="white_font" style="font-size: 30px">Cafe Batavia</h2>
+                        </div>
+                    @else
+                        <div class="carousel-item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="container">
+                                            <img src="/{{ $shop->shop_pict }}" alt="Our Recommendation Carousel" style=" height:500px">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="container">
+                                            <a href="{{ route('coffeeshop', ['id'=>$shop->id]) }}" style="text-decoration: none">
+                                                <h2 class="white_font" style="font-size: 30px">{{ $shop->shop_name }}</h2>
                                             </a>
-                                            <a  href="https://www.cafebatavia.com/" style="text-decoration:none"  target="_blank" rel="noopener noreferrer">
+                                            <a href="{{ $shop->shop_website }}" style="text-decoration:none" target="_blank" rel="noopener noreferrer">
                                                 <p class="white_font" style="margin-bottom: 67%;"> 
                                                     Visit website
                                                 </p>
                                             </a>
-                                            <a style="text-decoration:none " href="https://www.google.com/maps/place/Cafe+Batavia/@-6.1344685,106.8105859,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6a1dff154fd569:0xa38223eb6637cf44!8m2!3d-6.1344685!4d106.8127746">
-                                                <p class="white_font" >
-                                                    Pluit Indah No.31, RT.1/RW.7, Pluit, Kec. Penjaringan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14450
+                                            <a style="text-decoration: none"  target="_blank" rel="noopener noreferrer" href="{{ $shop->shop_maps }}">
+                                                <p class="white_font"> 
+                                                    {{ $shop->shop_address }}
                                                 </p>
                                             </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        @endif
-                    @endforeach
-                </div> 
-                
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    @endif
+                @endforeach
+            </div> 
+                <a class="carousel-control-prev" href="#CarouselCoffee" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#CarouselCoffee" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>

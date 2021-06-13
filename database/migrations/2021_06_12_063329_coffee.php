@@ -17,15 +17,18 @@ class coffee extends Migration
             $table->id();
             $table->string('shop_name');
             $table->float('rating')->default('0');
-            $table->string('shop_pict')->default('/images/profile.png');
-            $table->string('shop_pict1')->default('/images/profile.png');
-            $table->string('shop_pict2')->default('/images/profile.png');
-            $table->string('shop_pict3')->default('/images/profile.png');
-            $table->string('shop_pict4')->default('/images/profile.png');
-            $table->string('menu_pict')->default('/images/profile.png');
-            $table->string('menu_pict1')->default('/images/profile.png');
-            $table->string('location_pict')->default('/images/profile.png');
-            $table->string('review');
+            $table->string('shop_address')->nullable();
+            $table->string('shop_website')->nullable();
+            $table->string('shop_maps')->nullable();
+            $table->string('shop_pict')->default('images/profile.png');
+            $table->string('shop_pict1')->default('images/profile.png');
+            $table->string('shop_pict2')->default('images/profile.png');
+            $table->string('shop_pict3')->default('images/profile.png');
+            $table->string('shop_pict4')->default('images/profile.png');
+            $table->string('menu_pict')->default('images/profile.png');
+            $table->string('menu_pict1')->default('images/profile.png');
+            $table->string('location_pict')->default('images/profile.png');
+            $table->string('review')->nullable();
             $table->timestamps();
         });
     }

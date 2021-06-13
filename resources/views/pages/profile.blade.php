@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
-                        <img class="img-responsive" src={{ Auth::user()->profile_pict }} alt="Profile Picture" style="width: 100px; height: 100px; margin-left: 65px"/>
+                        <img class="img-responsive" src="/{{ Auth::user()->profile_pict }}" alt="Profile Picture" style="width: 100px; height: 100px; margin-left: 65px"/>
                     </div>
                     <div class="col-md-9">
                         <div class="row" style="padding-top: 5px">
