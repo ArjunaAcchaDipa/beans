@@ -112,7 +112,36 @@
                                 </table>    
                             </div>
                         </div>
-                    @else
+                    @elseif(($shop->id) == 2)
+                        <div class="carousel-item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="container">
+                                            <img src="/{{ $shop->shop_pict }}" alt="Our Recommendation Carousel" style=" height:500px">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="container">
+                                            <a href="{{ route('coffeeshop', ['id'=>$shop->id]) }}" style="text-decoration: none">
+                                                <h2 class="white_font" style="font-size: 30px">{{ $shop->shop_name }}</h2>
+                                            </a>
+                                            <a href="{{ $shop->shop_website }}" style="text-decoration:none" target="_blank" rel="noopener noreferrer">
+                                                <p class="white_font" style="margin-bottom: 67%;"> 
+                                                    Visit website
+                                                </p>
+                                            </a>
+                                            <a style="text-decoration: none"  target="_blank" rel="noopener noreferrer" href="{{ $shop->shop_maps }}">
+                                                <p class="white_font"> 
+                                                    {{ $shop->shop_address }}
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    @else()
                         <div class="carousel-item">
                             <table>
                                 <tr>
@@ -143,7 +172,6 @@
                         </div>
                     @endif
                 @endforeach
-            </div> 
                 <a class="carousel-control-prev" href="#CarouselCoffee" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -152,11 +180,12 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+            </div> 
                 <br>
                 <br>
-            </div>  
-        </div>
+        </div>  
     </div>
+    
     {{-- End of Our Recommendation --}}
 
     <div class="container heading" style="heading; padding-top: 20px">
