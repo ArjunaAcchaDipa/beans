@@ -6,8 +6,8 @@ We are here with the name "Beans" because delicious coffee always comes from cof
 
 ## Table of contents
 * [Technology](#technology)
-* [Usage](#usage)
-* [Setup](#setup)
+* [Installation](#installation)
+* [User Credentials for Login](#user-credentials-for-login)
 
 ## Technology
 - Laravel 8
