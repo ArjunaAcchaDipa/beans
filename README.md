@@ -4,6 +4,10 @@ Beans is an information provider application that provides information about cof
 
 We are here with the name "Beans" because delicious coffee always comes from coffee beans that are kept authentic.
 
+Beans Prototype
+- [Beans Prototype](https://www.figma.com/file/t3mm1moZ6iKUQ2QwpJ8Irc/Beans?node-id=12%3A48)
+- [Interactive Prototype](https://www.figma.com/proto/t3mm1moZ6iKUQ2QwpJ8Irc/Beans?node-id=27%3A73&starting-point-node-id=27%3A73)
+
 ## Table of contents
 * [Technology](#technology)
 * [Installation](#installation)
