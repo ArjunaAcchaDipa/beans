@@ -30,6 +30,8 @@ $ cd beans/
 
 # Install composer
 $ composer install
+# If the composer version is different, try using this one
+$ composer install --ignore-platform-reqs
 
 # Copy the example env file and make the required configuration changes in the .env file.
 $ cp .env.example .env
